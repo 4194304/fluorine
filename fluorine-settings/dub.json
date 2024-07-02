@@ -9,6 +9,5 @@
 	"description": "A settings app for the fluorine desktop environment",
 	"license": "GPL-3.0-only",
 	"name": "gui",
-	"dflags": ["-static"],
-	"lflags": ["-lcrtl.o"]
+	"dflags": ["-static"]
 }
