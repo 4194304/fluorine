@@ -18,9 +18,12 @@ While also being easy, there are a few more steps.
 __Steps__:
 1. Open a terminal
 2. Run `git clone https://github.com/4194304/fluorine-desktop`
-3. Change the directory into the fluorine-v2 folder that should be present with `cd fluorine-desktop`
-4. Run the install script with `./install.sh`
-5. Follow the steps in the installation procedure
+3. Change the directory into the fluorine-desktop folder that should be present with `cd fluorine-desktop`
+4. Run `cp -R fluorine-desktop ~/` to copy the contents of the desktop to your home directory. If prompted to replace files, respond with "yes".
+
+Future installation steps:
+~~4. Run the install script with `./install.sh`~~
+~~5. Follow the steps in the installation procedure~~
 
 ## 2. Configuration
 Fluorine can be configured graphically through the following apps:
