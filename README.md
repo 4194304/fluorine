@@ -72,3 +72,10 @@ An extremely customizable panel that also scales based on screen height alone.
 
 ## 4. Resource Usage
 With my current setup on my late 2013 MacBook Pro, from the tty to the complete environment, it uses approximately 109MiB of RAM.
+
+## To-do:
+* Create a separate Openbox theme (that isn't tenebris) in the mean time due to licensing concerns
+* Attempt to get mouse cursor to scale properly when starting the environment
+
+## Status
+Currently the project is in very early development, but sooner or later it will end up in a more polished state.
