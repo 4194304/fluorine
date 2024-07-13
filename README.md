@@ -1,4 +1,4 @@
-# Fluorine
+# <img src="https://i.imgur.com/AOVTzux.png" width="32px" height="32px"> Fluorine
 Fluorine is a self made desktop environment that strives to be lightweight, configurable, and hiDPI friendly.
 
 ## 1. Setup
@@ -105,8 +105,9 @@ Q: How to log off/shut down/restart?
 Q: Multiple monitor support?
  Due to how GTK, Tint2, jgmenu, and Openbox function, independent monitor scales will likely never happen.
 
-Q: Origin of name?
+Q: Origin of name and creation?
  Fluorine (yes, named after the element) was a name I came up with out of the blue, as I am bad at coming up with names.
+ As to why I created this, GNOME, my favorite desktop just wouldn't want to cooperate with fractional scaling patch. With KDE, it worked perfectly for a few days, and as expected (from past experiences), it broke after a few days. That simply wasn't acceptable to me, so I decided to fall back to what I had made previously, but with actual scaling instead of spoofing 1920x1200 with xrandr. With a bit of tweaking, it worked perfectly, and I decided to make it a project, thus leading to the creation of the Fluorine project.
 
 Q: Is it safe?
  It is entirely run by shell scripts with a GUI frontend for them. The entire desktop is open source. 
