@@ -79,3 +79,33 @@ With my current setup on my late 2013 MacBook Pro, from the tty to the complete 
 
 ## Status
 Currently the project is in very early development, but sooner or later it will end up in a more polished state.
+
+## FAQ
+Q: I thought that it would scale automatically!
+ Simply go into the control panel and change the scale yourself, as I have no control over what the proper scale for you would be.
+ *Note: a script might exist in the future to automatically scale it based on screen resolution on first startup in the future.
+
+Q: Help! I made everything too big!
+ Run the scripts from a TTY (look at documentation).
+
+Q: How do I configure the taskbar/panel?
+ Open the Tint2 configuration tool (Settings -> Tint2 Settings)
+  To configure the icons in the taskbar, go to the launcher section.
+  Further detail on how to configure the taskbar/panel is in the documentation.
+
+Q: How to log off/shut down/restart?
+ For instructions, hover over the ⏏️ button.
+ From there, perform your desired action.
+ For now, it will remain as it is until a GUI application is created.
+
+Q: Multiple monitor support?
+ Due to how GTK, Tint2, jgmenu, and Openbox function, independent monitor scales will likely never happen.
+
+Q: Origin of name?
+ Fluorine (yes, named after the element) was a name I came up with out of the blue, as I am bad at coming up with names.
+
+Q: Is it safe?
+ It is entirely run by shell scripts with a GUI frontend for them. The entire desktop is open source. 
+ If you're *that* paranoid about things, I'd recommend finding a mental health professional.
+
+More things will be here in the future, since (as mentioned above) the project is in its mere infancy.
