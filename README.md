@@ -22,6 +22,7 @@ __Steps__:
 4. Run `cp -R fluorine-desktop ~/` to copy the contents of the desktop to your home directory. If prompted to replace files, respond with "yes".
 
 Future installation steps:
+
 ~~4. Run the install script with `./install.sh`~~
 ~~5. Follow the steps in the installation procedure~~
 
