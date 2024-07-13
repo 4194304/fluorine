@@ -1,0 +1,1 @@
+exec ~/.fluorine/./dpi.sh & exec tint2 & exec ~/.fluorine/./xwallpaper.sh
