@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="accessories" label="Accessories">
+  <item label="gedit">
+    <action name="Execute">
+      <command>gedit</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+    <item label="Manage themes">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="utilities" label="Utilities">
+<item label="File Manager">
+    <action name="Execute">
+      <command>thunar</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Applications">
+    <action name="Execute">
+      <command>jgmenu_run</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+    <item label="Panel">
+    <action name="Execute">
+      <command>~/.fluorine/./tint2.sh</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+<item label="Terminal">
+    <action name="Execute">
+      <command>xfce4-terminal</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  	<item label="Reconfigure Openbox">
+   	 <action name="Reconfigure" />
+  	</item>
+  </menu>
+  
+<menu id="system" label="System">
+     <item label="Log off">
+    <action name="Execute">
+      <command>killall xinit</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+   <item label="Shut down">
+    <action name="Execute">
+      <command>shutdown -P 0</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+   <item label="Reboot">
+    <action name="Execute">
+      <command>reboot</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <separator label="Applications" />
+  <menu id="accessories"/>
+   <menu id="utilities"/>
+  <menu id="system"/>
+</menu>
+
+</openbox_menu>
