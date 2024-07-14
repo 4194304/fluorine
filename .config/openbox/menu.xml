@@ -77,7 +77,6 @@
 </menu>
 
 <menu id="root-menu" label="Openbox 3">
-  <separator label="Applications" />
   <menu id="accessories"/>
    <menu id="utilities"/>
   <menu id="system"/>
