@@ -75,7 +75,11 @@ A lightweight, modern, yet convenient text editor.
 ### tint2
 An extremely customizable panel that also scales based on screen height alone.
 
-## 4. Resource Usage
+## Icon theme
+The icon theme that best fit Fluorine for me was Qogir, it's quite simplistic, while still fitting in. 
+*Small note: for the Thunar icon to look decent, root privileges are required (to copy file-manager.svg from the theme to /usr/share/icons) as tint2 is very stubborn about file locations.*
+
+## 5. Resource Usage
 With my current setup on my late 2013 MacBook Pro, from the tty to the complete environment, it uses approximately 109MiB of RAM.
 
 ## To-do:
