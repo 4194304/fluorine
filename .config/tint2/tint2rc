@@ -235,23 +235,6 @@ button_centered = 0
 button_max_icon_size = 0
 
 #-------------------------------------
-# Button 2
-button = new
-button_icon = /opt/discord/discord.png
-button_text = 
-button_tooltip = Discord
-button_lclick_command = xterm discord
-button_rclick_command = 
-button_mclick_command = 
-button_uwheel_command = 
-button_dwheel_command = 
-button_font_color = #000000 100
-button_padding = 1 3
-button_background_id = 0
-button_centered = 0
-button_max_icon_size = 0
-
-#-------------------------------------
 # Button 3
 button = new
 button_text = ⏏️
@@ -276,3 +259,4 @@ tooltip_padding = 3 3
 tooltip_background_id = 1
 tooltip_font_color = #dddddd 100
 tooltip_font = Cantarell 8
+
