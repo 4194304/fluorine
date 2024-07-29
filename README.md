@@ -20,7 +20,7 @@ __Steps__:
 1. Open a terminal
 2. Run `git clone https://github.com/4194304/fluorine-desktop`
 3. Change the directory into the fluorine-desktop folder that should be present with `cd fluorine-desktop`
-4. Run `cp -R fluorine-desktop ~/` to copy the contents of the desktop to your home directory. If prompted to replace files, respond with "yes".
+4. Run `cp -R . ~/` to copy the contents of the desktop to your home directory. If prompted to replace files, respond with "yes".
 
 Future installation steps:
 
