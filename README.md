@@ -18,14 +18,15 @@ While also being easy, there are a few more steps.
 
 __Steps__:
 1. Open a terminal
-2. Get all of the dependencies with `sudo pacman -S git lxappearance lxterminal xorg-xrdb tint2 openbox jgmenu xwallpaper xorg-xinit thunar cantarell-fonts obconf`
-3. Get the icon theme with `git clone https://github.com/vinceliuice/Qogir-icon-theme`, followed by `./Qogir-icon-theme/install.sh -d ~/.local/share/icons -c dark`
-4. Create the .themes folder with `mkdir .themes`
-5. To get the proper GTK theme run `git clone -b Material-Black-Colors-Desktop https://github.com/rtlewis1/GTK.git`, and move it into .themes with `cp -R GTK/* ~/.themes/` 
-6. Run `git clone https://github.com/4194304/fluorine-desktop`
-7. Copy the Fluorine files to your home directory with `cp -R fluorine-desktop ~`
-8. Cleanup everything left by the setup with `rm -rf fluorine-desktop Qogir-icon-theme Material-Black-Colors screenshot.png LICENSE README.md`
-9. If using no display manager, run Fluorine by using `startx`. If using a display manager, select Openbox.
+2. Make sure you're in the home directory with `cd ~`
+3. Get all of the dependencies with `sudo pacman -S git lxappearance lxterminal xorg-xrdb tint2 openbox jgmenu xwallpaper xorg-xinit thunar cantarell-fonts obconf`
+4. Get the icon theme with `git clone https://github.com/vinceliuice/Qogir-icon-theme`, followed by `./Qogir-icon-theme/install.sh -d ~/.local/share/icons -c dark`
+5. Create the .themes folder with `mkdir .themes`
+6. To get the proper GTK theme run `git clone -b Material-Black-Colors-Desktop https://github.com/rtlewis1/GTK.git`, and move it into .themes with `cp -R GTK/* ~/.themes/` 
+7. Run `git clone https://github.com/4194304/fluorine-desktop`
+8. Copy the Fluorine files to your home directory with `cp -R fluorine-desktop ~`
+9. Cleanup everything left by the setup with `rm -rf fluorine-desktop Qogir-icon-theme Material-Black-Colors screenshot.png LICENSE README.md`
+10. If using no display manager, run Fluorine by using `startx`. If using a display manager, select Openbox.
 
 Future installation steps:
 
