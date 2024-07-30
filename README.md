@@ -25,7 +25,7 @@ __Steps__:
 7. To get the proper GTK theme run `git clone -b Material-Black-Colors-Desktop https://github.com/rtlewis1/GTK.git`, and move it into .themes with `cp -R GTK/* ~/.themes/` 
 8. Run `git clone https://github.com/4194304/fluorine-desktop`
 9. Copy the Fluorine files to your home directory with `rsync -av --ignore-existing fluorine-desktop/ ~`
-10. Cleanup everything left by the setup with `rm -rf fluorine-desktop Qogir-icon-theme GTK screenshot.png LICENSE README.md`
+10. Cleanup everything left by the setup with `rm -rf fluorine-desktop Qogir-icon-theme GTK screenshot.png LICENSE README.md fluorine-settings`
 11. If using no display manager, run Fluorine by using `startx`. If using a display manager, select Openbox.
 
 Future installation steps:
