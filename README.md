@@ -18,7 +18,7 @@ While also being easy, there are a few more steps.
 
 __Steps__:
 1. Open a terminal
-2. Get all of the dependencies with `sudo pacman -S lxappearance lxterminal xorg-xrdb tint2 openbox jgmenu xwallpaper xorg-xinit thunar cantarell-fonts obconf`
+2. Get all of the dependencies with `sudo pacman -S git lxappearance lxterminal xorg-xrdb tint2 openbox jgmenu xwallpaper xorg-xinit thunar cantarell-fonts obconf`
 3. Get the icon theme with `git clone https://github.com/vinceliuice/Qogir-icon-theme`, followed by `./Qogir-icon-theme/install.sh -d ~/.local/share/icons -c dark`
 4. To get the proper GTK theme run `git clone -b Material-Black-Colors-Desktop https://github.com/rtlewis1/GTK.git`, and move it into .themes with `cp -R GTK/* ~/.themes/` 
 5. Run `git clone https://github.com/4194304/fluorine-desktop`
