@@ -277,7 +277,7 @@ class GTKScale : MyScale {
 
 class JGMenuScale : Scale {
 	double minimum = 1;
-	double maximum = 6;
+	double maximum = 10;
 	double step = 1;
 	this() {
 		super(Orientation.HORIZONTAL, minimum, maximum, step);
