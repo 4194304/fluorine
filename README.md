@@ -2,7 +2,7 @@
 Fluorine is a self made desktop environment that strives to be lightweight, configurable, and hiDPI friendly.
 <img src="https://i.imgur.com/raTmZRH.png" width="288" height="188"> <img src="https://i.imgur.com/6xuLQnt.png" width="288" height="188">
 
-# WARNING: FLUORINE IS NOT CURRENTLY IN A FULLY FUNCTIONAL STATE. DO NOT EXPECT EVERYTHING TO WORK.
+#### WARNING: FLUORINE IS NOT CURRENTLY IN A FULLY FUNCTIONAL STATE. DO NOT EXPECT EVERYTHING TO WORK.
 
 ## 1. Setup
 Setting up Fluorine can be done in two ways:
