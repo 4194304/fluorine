@@ -22,13 +22,13 @@ __Steps__:
 1. Open a terminal
 2. Make sure you're in your home directory with `cd ~`
 3. Get all of the dependencies with `sudo pacman -S rsync git xorg lxappearance-obconf lxterminal xorg-xrdb tint2 openbox jgmenu xwallpaper xorg-xinit thunar cantarell-fonts obconf xorg-server gnu-free-fonts`
-5. Get the icon theme with `git clone https://github.com/vinceliuice/Qogir-icon-theme`, followed by `mkdir -p ~/.local/share/icons; ./Qogir-icon-theme/install.sh -d ~/.local/share/icons -c dark`
+5. Get the icon theme with `git clone https://github.com/vinceliuice/Qogir-icon-theme`, followed by `mkdir -p ~/.local/share/icons; ./Qogir-icon-theme/install.sh -d ~/.local/share/icons -c all`
 6. Create the .themes folder with `mkdir .themes`
 7. To get the proper GTK theme run `git clone -b Material-Black-Colors-Desktop https://github.com/rtlewis1/GTK.git`, and move it into .themes with `cp -R GTK/* ~/.themes/` 
 8. Run `git clone https://github.com/4194304/fluorine-desktop`
 9. Copy the Fluorine files to your home directory with `rsync -av --ignore-existing fluorine-desktop/ ~`
 10. Cleanup everything left by the setup with `rm -rf fluorine-desktop Qogir-icon-theme GTK screenshot.png LICENSE README.md fluorine-settings`
-11. Make fluorine-settings an executable with `chmod +x ~/.fluorine/gui`, and allow the backend scripts to work with `chmod +x ~/.fluorine/*.sh`.
+11. Make all of the scripts within Fluorine executable with `chmod +x ~/.fluorine/*` so the desktop works as intended.
 12. If using no display manager, run Fluorine by using `startx`. If using a display manager, select Openbox.
 
 Future installation steps:
