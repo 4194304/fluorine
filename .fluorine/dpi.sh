@@ -1,1 +1,1 @@
-echo Xft.dpi: 192 | xrdb -override
+echo Xft.dpi: 96 | xrdb -override
