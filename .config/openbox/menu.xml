@@ -3,9 +3,9 @@
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 
 <menu id="accessories" label="Accessories">
-  <item label="gedit">
+  <item label="Leafpad">
     <action name="Execute">
-      <command>gedit</command>
+      <command>l3afpad</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
