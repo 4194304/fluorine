@@ -70,8 +70,8 @@ The has the same function as the Window Borders tab in LXAppearance, but in its 
 ## 3. Applications
 Along with all of the configuration applications, there are a few applications which make up this desktop.
 
-### xfce4-terminal
-The default terminal due to the minimal amount of dependencies it has, and it has a solid GTK base.
+### LXTerminal
+The default terminal due to the minimal resource usage and small number of dependencies it has.
 
 ### Thunar
 Also part of XFCE, it's a rock solid GTK file manager which works great with DPI scaling.
@@ -79,18 +79,17 @@ Also part of XFCE, it's a rock solid GTK file manager which works great with DPI
 ### jgmenu
 A simple, yet extremely customizable X11 menu.
 
-### gedit
-A lightweight, modern, yet convenient text editor.
+### Leafpad (L3afpad)
+A GTK3 adaptation of a GTK2 text editor that gets the job done.
 
 ### tint2
 An extremely customizable panel that also scales based on screen height alone.
 
 ## Icon theme
 The icon theme that best fit Fluorine for me was Qogir, it's quite simplistic, while still fitting in. 
-*Small note: for the Thunar icon to look decent, root privileges are required (to copy file-manager.svg from the theme to /usr/share/icons) as tint2 is very stubborn about file locations.*
 
 ## 5. Resource Usage
-With my current setup on my late 2013 MacBook Pro, from the tty to the complete environment, it uses approximately 109MiB of RAM.
+With my current setup on my late 2013 MacBook Pro, from the tty to the complete environment, it uses approximately 109MiB of RAM (as of super early development).
 
 ## To-do:
 * Create a separate Openbox theme (that isn't tenebris) in the mean time due to licensing concerns
