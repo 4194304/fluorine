@@ -22,6 +22,7 @@ __Steps__:
 1. Open a terminal
 2. Make sure you're in your home directory with `cd ~`
 3. Get all of the dependencies with `sudo pacman -S rsync git xorg lxappearance-obconf lxterminal xorg-xrdb tint2 openbox jgmenu xwallpaper xorg-xinit thunar cantarell-fonts obconf xorg-server gnu-free-fonts l3afpad`
+
 (optional) 3.5. If you'd like to edit the Openbox menu inside of Fluorine with ease, install the package `obmenu` from the AUR (should be `<AUR helper name> -S obmenu`).
 4. Get the icon theme with `git clone https://github.com/vinceliuice/Qogir-icon-theme`, followed by `mkdir -p ~/.local/share/icons; ./Qogir-icon-theme/install.sh -d ~/.local/share/icons -c all`
 5. Create the .themes folder with `mkdir .themes`
