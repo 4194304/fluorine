@@ -9,12 +9,12 @@
 
 !!General
 
-window.handle.width: 10
+window.handle.width: 4
 window.client.padding.width: 0
 window.client.padding.height: 0
-border.Width: 6
-padding.width: 8
-menu.overlap: 6
+border.Width: 2
+padding.width: 5
+menu.overlap: 4
 border.color: #000000
 window.frameColor: #000000
 window.*.client.color: #000000
