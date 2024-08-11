@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 echo " "
 echo "Would you like to install the Fluorine desktop?"
 echo "If so, respond by pressing "y" then hitting enter."
