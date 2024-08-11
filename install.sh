@@ -17,6 +17,8 @@ if [[ $prompt == y* ]]; then
 	rsync -av fluorine-desktop/ ~
 	rm -rf fluorine-desktop Qogir-icon-theme GTK screenshot.png LICENSE README.md fluorine-settings
 	chmod +x ~/.fluorine/*
+ 	cp ~/.local/share/icons/Qogir/scalable/apps/file-manager.svg ~/.local/share/icons/Qogir/scalable/apps/org.xfce.thunar.svg
+  	cp ~/.local/share/icons/Qogir/scalable/apps/org.xfce.terminal.svg ~/.local/share/icons/Qogir/scalable/apps/lxterminal.svg
 	echo " "
 	echo "Installation complete!"
 	echo "If you would like to start Fluorine (if in a TTY), run startx."
