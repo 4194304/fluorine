@@ -5,24 +5,13 @@ Fluorine is a self made desktop environment that strives to be lightweight, conf
 <img src="https://i.imgur.com/raTmZRH.png" width="288" height="188"> <img src="https://i.imgur.com/6xuLQnt.png" width="288" height="188">
 
 ## 1. Setup
-Setting up Fluorine can be done in two ways:
-
-### 1. Installing it from the AUR
-By far the easiest and most practical method, installing Fluorine from the AUR should be very straightforward and simple.
-
-__Steps__:
-~~1. Install it from AUR by running `yay -S fluorine`~~
-~~2. Proceed like you would with any other AUR package~~
-AUR installation is coming soon
-
-### 2. Cloning and installing
-While also being easy, there are a few more steps.
+Setting up Fluorine at the moment is done like this:
 
 __Steps__:
 1. Open a terminal
-2. Get the installation script with __curl https://raw.githubusercontent.com/4194304/fluorine-desktop/main/install.sh >> install.sh__
-3. Allow it to run with __chmod +x install.sh__
-4. Run it with __./install.sh__
+2. Get the installation script with `curl https://raw.githubusercontent.com/4194304/fluorine-desktop/main/install.sh >> install.sh`
+3. Allow it to run with `chmod +x install.sh`
+4. Run it with `./install.sh`
 
 ## 2. Configuration
 Fluorine can be configured graphically through the following apps:
