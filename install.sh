@@ -3,7 +3,7 @@ echo " "
 echo "Would you like to install the Fluorine desktop?"
 echo "If so, respond by pressing "y" then hitting enter if necessary."
 echo "If not, please respond with anything other than that."
-read -p Do you want to continue [y/n]: prompt
+read -p "Do you want to continue [y/n]: " prompt
 if [[ $prompt == y* ]]; then
 	cd ~
 	clear
