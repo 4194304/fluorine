@@ -27,7 +27,7 @@ __LXAppearance on Fluorine supports the following in the different tabs:__
   * Window button order
   
 __Disclaimer:__
-For hiDPI users, most Openbox themes will have buttons that are way too small. For those who still want to change the Openbox theme, I recommend [OpenScale](https://github.com/4194304/fluorine-dpi-scripts), as you can simply feed in the percentage scale you want, and the directory of the theme, and it'll scale it all for you (not perfectly though!).
+For hiDPI users, most Openbox themes will have buttons that are way too small. For those who still want to change the Openbox theme, I recommend [OpenScale](https://github.com/4194304/fluorine-dpi-scripts), as you can simply feed in the percentage scale you want, and the directory of the theme, and it'll scale it all for you (far from perfectly though!).
 
 * Font, where you can configure font related things
 * Other, where you can find some GUI related options
@@ -57,17 +57,15 @@ A simple, yet extremely customizable X11 menu.
 A GTK3 adaptation of a GTK2 text editor that gets the job done.
 
 ### tint2
-An extremely customizable panel that also scales based on screen height alone.
+An extremely customizable panel that scales based on screen height (everything else doesn't scale automatically, don't let it decieve you!
 
 ## Icon theme
-The icon theme that best fit Fluorine for me was Qogir, it's quite simplistic, while still fitting in. 
+The icon theme that best fit Fluorine for me was Qogir, as it's simplistic, easy for the eyes, and fits in.
+
+Credit goes to Vinceliuice for making it. If you're interested in taking a look around in the repository, [here it is!](https://github.com/vinceliuice/Qogir-icon-theme)
 
 ## 5. Resource Usage
-With my current setup on my late 2013 MacBook Pro, from the tty to the complete environment, it uses approximately 109MiB of RAM (as of super early development).
-
-## To-do:
-* Create a separate Openbox theme (that isn't tenebris) in the mean time due to licensing concerns
-* Attempt to get mouse cursor to scale properly when starting the environment
+With my current setup on my late 2013 MacBook Pro (the main development station), from the TTY to the complete environment, it uses approximately 122MiB of RAM (as of 8/13/2024).
 
 ## Status
 Currently the project is in very early development, but sooner or later it will end up in a more polished state.
@@ -99,6 +97,18 @@ Q: Origin of name and creation?
 
 Q: Is it safe?
  It is entirely run by shell scripts with a GUI frontend for them. The entire desktop is open source. 
- If you're *that* paranoid about things, I'd recommend finding a mental health professional.
+ If you're still concerned, everything here is for you to view, so you can make the decision if you want to use it or not yourself.
 
-More things will be here in the future, since (as mentioned above) the project is in its mere infancy.
+Q: Tasks in the taskbar look off. How can it be fixed?
+ Open the Tint2 Panel Configurator (Start -> Settings -> Tint2 Panel Configurator), and find the _Task Buttons_ section.
+ From there, find the _maximum width_ option and configure it to your liking.
+
+Q: How to install it?
+ Scroll up to the top (it's right there!)
+ For people who like to use the AUR, simply install it from there, run flstart, and let it do its work. The next time you run flstart after installation, it'll start Fluorine.
+
+## To-do:
+* Attempt to get mouse cursor scaling to work
+* Do EVEN MORE testing to get the installation script to ACTUALLY work at LEAST 100% of the time
+* Do some testing on an 8K display to make sure that 500% scale looks good
+* Wait until the Fluorine Settings applications actually works
