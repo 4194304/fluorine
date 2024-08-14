@@ -1,1 +1,1 @@
-xwallpaper --maximize ~/.fluorine/background1.png
+xwallpaper --stretch ~/.fluorine/background1.png
