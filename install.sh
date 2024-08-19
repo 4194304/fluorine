@@ -10,6 +10,12 @@ if [[ $prompt == y* ]]; then
 	git clone https://github.com/vinceliuice/Qogir-icon-theme
 	mkdir -p ~/.local/share/icons; ./Qogir-icon-theme/install.sh -d ~/.local/share/icons -c all
 	mkdir .themes
+	mkdir ~/Desktop
+	mkdir ~/Documents
+	mkdir ~/Downloads
+	mkdir ~/Music
+	mkdir ~/Pictures
+	mkdir ~/Videos
 	git clone -b Material-Black-Colors-Desktop https://github.com/rtlewis1/GTK.git
 	cp -R GTK/* ~/.themes/
 	git clone https://github.com/4194304/fluorine-desktop
@@ -23,6 +29,7 @@ if [[ $prompt == y* ]]; then
  	cp ~/.local/share/icons/Qogir/scalable/apps/file-manager.svg ~/.local/share/icons/Qogir/scalable/apps/org.xfce.thunar.svg
   	cp ~/.local/share/icons/Qogir/scalable/apps/org.xfce.terminal.svg ~/.local/share/icons/Qogir/scalable/apps/lxterminal.svg
 	echo " "
+	sed -i "s/fluorine/$USER/g" ~/.config/gtk-3.0/bookmarks
 	echo "Installation complete!"
 	echo "If you would like to start Fluorine (if in a TTY), run startx."
 	exit
