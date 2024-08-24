@@ -89,7 +89,7 @@ Q: How to log off/shut down/restart?
  For now, it will remain as it is until a GUI application is created.
 
 Q: Multiple monitor support?
- Due to how GTK, Tint2, jgmenu, and Openbox function, independent monitor scales will likely never happen.
+ Due to how GTK, Tint2, jgmenu, and Openbox function, independent monitor scales will likely never happen. However, I have an idea of scaling connected monitors artificially, but it hasn't been implemented yet. For instance, if you were to have a momitor at 3840x2160@300% and a 1080p monitor, it would double your other monitor's screen resolution to accommodate for the scale.
 
 Q: Origin of name and creation?
  Fluorine (yes, named after the element) was a name I came up with out of the blue, as I am bad at coming up with names.
