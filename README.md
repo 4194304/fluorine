@@ -39,7 +39,7 @@ Currently in progress as of now, but will allow you to change some different att
 Used to configure the taskbar.
 
 ### obconf
-The has the same function as the Window Borders tab in LXAppearance, but in its own, more organized application.
+The has the same function as the Window Border tab in LXAppearance, but in its own, more organized application.
 
 ## 3. Applications
 Along with all of the configuration applications, there are a few applications which make up this desktop.
@@ -57,7 +57,7 @@ A simple, yet extremely customizable X11 menu.
 A GTK3 adaptation of a GTK2 text editor that gets the job done.
 
 ### tint2
-An extremely customizable panel that scales based on screen height (everything else doesn't scale automatically, don't let it decieve you!
+A taskbar that scales well in hiDPI settings.
 
 ## Icon theme
 The icon theme that best fit Fluorine for me was Qogir, as it's simplistic, easy for the eyes, and fits in.
@@ -68,12 +68,12 @@ Credit goes to Vinceliuice for making it. If you're interested in taking a look 
 With my current setup on my late 2013 MacBook Pro (the main development station), from the TTY to the complete environment, it uses approximately 122MiB of RAM (as of 8/13/2024).
 
 ## Status
-Currently the project is in very early development, but sooner or later it will end up in a more polished state.
+The project is in more of a beta than anything else as there are some issues, although not very major.
 
 ## FAQ
 Q: I thought that it would scale automatically!
  Simply go into the control panel and change the scale yourself, as I have no control over what the proper scale for you would be.
- *Note*: a script might exist in the future to automatically scale it based on screen resolution on first startup in the future.
+ **Note**: a script might exist in the future to automatically scale it based on screen resolution on first startup in the future.
 
 Q: Help! I made everything too big!
  Run the scripts from a TTY (look at documentation).
