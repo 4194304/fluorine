@@ -108,7 +108,6 @@ Q: How to install it?
  For people who like to use the AUR, simply install it from there, run flstart, and let it do its work. The next time you run flstart after installation, it'll start Fluorine.
 
 ## To-do:
-* Attempt to get mouse cursor scaling to work
-* Do EVEN MORE testing to get the installation script to ACTUALLY work at LEAST 100% of the time
-* Do some testing on an 8K display to make sure that 500% scale looks good
+* Make an easy way to inject cursor scale into bashrc
+* Make it so Thunar's sidebar scales with scale factor
 * Wait until the Fluorine Settings applications actually works
