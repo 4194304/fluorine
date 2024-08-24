@@ -73,7 +73,7 @@ Currently the project is in very early development, but sooner or later it will 
 ## FAQ
 Q: I thought that it would scale automatically!
  Simply go into the control panel and change the scale yourself, as I have no control over what the proper scale for you would be.
- *Note: a script might exist in the future to automatically scale it based on screen resolution on first startup in the future.
+ *Note*: a script might exist in the future to automatically scale it based on screen resolution on first startup in the future.
 
 Q: Help! I made everything too big!
  Run the scripts from a TTY (look at documentation).
