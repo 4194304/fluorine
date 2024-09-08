@@ -1,1 +1,1 @@
-exec ~/.fluorine/./dpi.sh & exec tint2 & exec ~/.fluorine/./xwallpaper.sh
+exec ~/.fluorine/./dpi.sh & exec tint2 & exec opensnap & exec ~/.fluorine/./xwallpaper.sh
