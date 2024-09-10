@@ -1,4 +1,0 @@
-#define max_pressed_width 8
-#define max_pressed_height 8
-static char max_pressed_bits[] = {
-  0x00, 0x00, 0xFC, 0xFC, 0x84, 0x84, 0x84, 0xFC, };
