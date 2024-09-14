@@ -68,48 +68,10 @@ Credit goes to Vinceliuice for making it. If you're interested in taking a look 
 With my current setup on my late 2013 MacBook Pro (the main development station), from the TTY to the complete environment, it uses approximately 122MiB of RAM (as of 8/13/2024).
 
 ## Status
-The project is in more of a beta than anything else as there are some issues, although not very major.
-
-## FAQ
-Q: I thought that it would scale automatically!
- For now you'll have to scale it by copying some files over to your config directories, but it will be changed to be script compatible as soon as possible.
-
-Q: Wayland Compatibility?
- Wayland compatibility is quite an intensive task due to the display protocol's catering towards desktop environments, programs being a pain to find and configure, and NVIDIA drivers being not the easiest to set up for the average user, so in short, Fluorine would have to be rebuilt to get that to work. Don't expect it anytime soon, but it is planned to exist at some point.
-
-Q: Help! I made everything too big!
- Run the scripts from a TTY (look at documentation).
-
-Q: How do I configure the taskbar/panel?
- Open the Tint2 configuration tool (Settings -> Tint2 Settings)
-  To configure the icons in the taskbar, go to the launcher section.
-  Further detail on how to configure the taskbar/panel is in the documentation.
-
-Q: How to log off/shut down/restart?
- For instructions, hover over the ⏏️ button.
- From there, perform your desired action.
- For now, it will remain as it is until a GUI application is created.
-
-Q: Multiple monitor support?
- Due to how GTK, Tint2, jgmenu, and Openbox function, independent monitor scales will likely never happen. However, I have an idea of scaling connected monitors artificially, but it hasn't been implemented yet. For instance, if you were to have a momitor at 3840x2160@300% and a 1080p monitor, it would double your other monitor's screen resolution to accommodate for the scale.
-
-Q: Origin of name and creation?
- Fluorine (yes, named after the element) was a name I came up with out of the blue, as I am bad at coming up with names.
- As to why I created this, GNOME, my favorite desktop just wouldn't want to cooperate with fractional scaling patch. With KDE, it worked perfectly for a few days, and as expected (from past experiences), it broke after a few days. That simply wasn't acceptable to me, so I decided to fall back to what I had made previously, but with actual scaling instead of spoofing 1920x1200 with xrandr. With a bit of tweaking, it worked perfectly, and I decided to make it a project, thus leading to the creation of the Fluorine project.
-
-Q: Is it safe?
- It is entirely run by shell scripts with a GUI frontend for them. The entire desktop is open source. 
- If you're still concerned, everything here is for you to view, so you can make the decision if you want to use it or not yourself.
-
-Q: Tasks in the taskbar look off. How can it be fixed?
- Open the Tint2 Panel Configurator (Start -> Settings -> Tint2 Panel Configurator), and find the _Task Buttons_ section.
- From there, find the _maximum width_ option and configure it to your liking.
-
-Q: How to install it?
- Scroll up to the top (it's right there!)
- For people who like to use the AUR, simply install it from there, run flstart, and let it do its work. The next time you run flstart after installation, it'll start Fluorine.
+The project is in more of a beta than anything else as there are some issues, although not very major. Edit as of 9/14/2024: At the moment some things are being changed, so some major parts of Fluorine (such as the DPI scripts) are broken at the moment.
 
 ## To-do:
 * Make an easy way to inject cursor scale into bashrc
 * Make it so Thunar's sidebar scales with scale factor
+* Create new scripts to scale Fluorine
 * Wait until the Fluorine Settings applications actually works
