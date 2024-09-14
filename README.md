@@ -72,8 +72,10 @@ The project is in more of a beta than anything else as there are some issues, al
 
 ## FAQ
 Q: I thought that it would scale automatically!
- Simply go into the control panel and change the scale yourself, as I have no control over what the proper scale for you would be.
- **Note**: a script might exist in the future to automatically scale it based on screen resolution on first startup in the future.
+ For now you'll have to scale it by copying some files over to your config directories, but it will be changed to be script compatible as soon as possible.
+
+Q: Wayland Compatibility?
+ Wayland compatibility is quite an intensive task due to the display protocol's catering towards desktop environments, programs being a pain to find and configure, and NVIDIA drivers being not the easiest to set up for the average user, so in short, Fluorine would have to be rebuilt to get that to work. Don't expect it anytime soon, but it is planned to exist at some point.
 
 Q: Help! I made everything too big!
  Run the scripts from a TTY (look at documentation).
