@@ -136,9 +136,9 @@ task_text = 1
 task_icon = 1
 task_centered = 1
 urgent_nb_of_blink = 100000
-task_maximum_size = 45 22
+task_maximum_size = 90 44
 task_padding = 1 1 5
-task_font = Cantarell 3
+task_font = lowDPI font 5
 task_tooltip = 1
 task_thumbnail = 1
 task_thumbnail_size = 33
@@ -181,10 +181,10 @@ launcher_item_app = /usr/share/applications/lxterminal.desktop
 # Clock
 time1_format = %H:%M
 time2_format = %m/%d/%Y
-time1_font = Cantarell Bold 3
+time1_font = lowDPI font 5
 time1_timezone = 
 time2_timezone = 
-time2_font = Cantarell 2
+time2_font = lowDPI font 0
 clock_font_color = #ffffff 100
 clock_padding = 4 0
 clock_background_id = 1
@@ -202,8 +202,8 @@ battery_tooltip = 1
 battery_low_status = 5
 battery_low_cmd = xmessage 'tint2: Battery low!'
 battery_full_cmd = 
-bat1_font = Cantarell 6
-bat2_font = Cantarell 6
+bat1_font = lowDPI font 6
+bat2_font = lowDPI font 6
 battery_font_color = #ffffff 100
 bat1_format = 
 bat2_format = 
@@ -248,7 +248,7 @@ button_font_color = #ffffff 100
 button_padding = 0 0
 button_background_id = 0
 button_centered = 0
-button_max_icon_size = 3
+button_max_icon_size = 8
 
 #-------------------------------------
 # Tooltip
@@ -257,5 +257,5 @@ tooltip_hide_timeout = 0.1
 tooltip_padding = 2 2
 tooltip_background_id = 1
 tooltip_font_color = #dddddd 100
-tooltip_font = Cantarell 3
+tooltip_font = lowDPI font 5
 
