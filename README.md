@@ -9,7 +9,7 @@ Setting up Fluorine at the moment is done like this:
 
 __Steps__:
 1. Open a terminal
-2. Run `/usr/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/4194304/fluorine/main/install.sh)"`
+2. Run `bash -c "$(curl -fsSL https://fluorine.sh/install)"`
 
 ## 2. Configuration
 Fluorine can be configured graphically through the following apps:
