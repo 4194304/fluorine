@@ -4,6 +4,6 @@ scale_relative_to_dpi = 100
 menu_width = 25
  item_height = 7
 sep_height = 3
-font = Cantarell 3
+font = lowDPI font 5
 icon_size = 3
 arrow_width = 4
