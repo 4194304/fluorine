@@ -1,5 +1,5 @@
   <theme>
-    <name>default-0.25x</name>
+    <name>default-0.5x</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
