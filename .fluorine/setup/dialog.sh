@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+clear
 dialog --title "Fluorine Setup" \
 	--clear \
 	--msgbox \
