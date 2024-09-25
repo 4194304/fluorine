@@ -1,2 +1,2 @@
-xrdb -load ~/.Xresources
+xrdb -merge ~/.Xresources
 exec openbox-session
