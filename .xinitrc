@@ -1,1 +1,2 @@
+xrdb -load ~/.Xresources
 exec openbox-session
