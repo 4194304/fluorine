@@ -1,3 +1,5 @@
+### README is currently under construction
+
 ## Note:
 Fluorine is in a mostly functional beta, so please note that the desktop may have bugs, or be prone to breaking.
 
@@ -12,6 +14,3 @@ Fluorine can be installed by running the following command below:
 bash <(curl -s https://fluorine.sh/install)
 ```
 Proceed with the prompts and when you're done you should be greeted with Fluorine's desktop!
-
-Sorry, the README isn't finished as I am redoing it
--4194304
