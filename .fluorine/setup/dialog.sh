@@ -45,5 +45,4 @@ exec ~/.fluorine/./setinterface.sh $number & dialog --title "Fluorine Setup" \
 "Fluorine has been successfully set up. \n
 \n
 Press enter to continue." 10 50
-killall xinit
 startx
