@@ -9,5 +9,5 @@ Fluorine is a Linux desktop that focuses on being lightweight, customizable, and
 ### How to install Fluorine
 Fluorine can be installed by running the following command below:
 ```bash
-bash <(curl -s https://fluorine.sh/newinstall)
+bash <(curl -s https://fluorine.sh/install)
 ```
