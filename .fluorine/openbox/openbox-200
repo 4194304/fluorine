@@ -1,4 +1,5 @@
-  <theme>
+  <!-- openboxstart -->
+<theme>
     <name>default-2x</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
@@ -68,5 +69,4 @@
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
-  <desktops>
-    <!-- this stuff
+<!-- openboxclose -->

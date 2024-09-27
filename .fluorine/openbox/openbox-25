@@ -1,3 +1,4 @@
+<!-- openboxstart -->
   <theme>
     <name>default-0.25x</name>
     <titleLayout>NLIMC</titleLayout>
@@ -15,7 +16,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>lowDPI font</name>
-      <size>17</size>
+      <size>5</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -42,7 +43,7 @@
     </font>
     <font place="MenuItem">
       <name>lowDPI font</name>
-      <size>5</size>
+      <size>17</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -68,5 +69,4 @@
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
-  <desktops>
-    <!-- this stuff
+<!-- openboxclose -->
