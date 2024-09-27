@@ -41,6 +41,7 @@
        following: 'Mouse' - where the mouse is, or
                   'Active' - where the active window is -->
   </placement>
+                <!-- openboxthemestart -->
   <theme>
     <name>default-1x</name>
     <titleLayout>NLIMC</titleLayout>
@@ -58,7 +59,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Cantarell</name>
-      <size>10</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -67,7 +68,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Cantarell</name>
-      <size>10</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -76,7 +77,7 @@
     </font>
     <font place="MenuHeader">
       <name>Cantarell</name>
-      <size>10</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -85,7 +86,7 @@
     </font>
     <font place="MenuItem">
       <name>Cantarell</name>
-      <size>10</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -111,6 +112,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
+        <!-- openboxthemeclose -->
   <desktops>
     <!-- this stuff is only used at startup, pagers allow you to change them
        during a session
