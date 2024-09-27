@@ -41,7 +41,7 @@
        following: 'Mouse' - where the mouse is, or
                   'Active' - where the active window is -->
   </placement>
-                <!-- openboxthemestart -->
+                <!-- openboxstart -->
   <theme>
     <name>default-1x</name>
     <titleLayout>NLIMC</titleLayout>
@@ -112,7 +112,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
-        <!-- openboxthemeclose -->
+        <!-- openboxclose -->
   <desktops>
     <!-- this stuff is only used at startup, pagers allow you to change them
        during a session
