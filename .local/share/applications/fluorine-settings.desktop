@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=fluorine settings
-Exec="$HOME/.fluorine/gui"
-Icon="$HOME/.fluorine/fluorine.png"
-NoDisplay=false
-Type=Application
-Categories=Settings
