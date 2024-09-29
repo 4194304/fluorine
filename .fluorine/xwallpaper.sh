@@ -1,3 +1,4 @@
+#!/bin/bash
 killall opensnap
 opensnap & disown
 sleep 0.01
