@@ -55,7 +55,7 @@ background_color_pressed = #555555 4
 border_color_pressed = #eaeaea 44
 
 # Background 4: Urgent task
-rounded = 18
+rounded = 9
 border_width = 5
 border_sides = TBLR
 border_content_tint_weight = 0
@@ -68,8 +68,8 @@ background_color_pressed = #555555 4
 border_color_pressed = #9a9996 100
 
 # Background 5: Default task
-rounded = 14
-border_width = 14
+rounded = 7
+border_width = 7
 border_sides = TBLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
@@ -83,7 +83,7 @@ border_color_pressed = #000000 100
 #-------------------------------------
 # Panel
 panel_items = PLTSCP
-panel_size = 100% 144
+panel_size = 100% 72
 panel_margin = 0 0
 panel_padding = 1 0 1
 panel_background_id = 1
@@ -136,12 +136,12 @@ task_text = 1
 task_icon = 1
 task_centered = 1
 urgent_nb_of_blink = 100000
-task_maximum_size = 180 88
-task_padding = 9 9 45
-task_font = Cantarell 40
+task_maximum_size = 405 198
+task_padding = 5 5 22
+task_font = Cantarell 20
 task_tooltip = 1
 task_thumbnail = 1
-task_thumbnail_size = 585
+task_thumbnail_size = 292
 task_font_color = #ffffff 100
 task_background_id = 5
 task_active_background_id = 3
@@ -165,10 +165,10 @@ systray_name_filter =
 
 #-------------------------------------
 # Launcher
-launcher_padding = 14 14 27
+launcher_padding = 7 7 13
 launcher_background_id = 1
 launcher_icon_background_id = 0
-launcher_icon_size = 230
+launcher_icon_size = 115
 launcher_icon_asb = 100 0 0
 launcher_icon_theme = Qogir
 launcher_icon_theme_override = 0
@@ -181,12 +181,12 @@ launcher_item_app = /usr/share/applications/lxterminal.desktop
 # Clock
 time1_format = %H:%M
 time2_format = %m/%d/%Y
-time1_font = Cantarell Bold 41
+time1_font = Cantarell Bold 20
 time1_timezone = 
 time2_timezone = 
-time2_font = Cantarell 45
+time2_font = Cantarell 23
 clock_font_color = #ffffff 100
-clock_padding = 41 0
+clock_padding = 20 0
 clock_background_id = 1
 clock_tooltip = 
 clock_tooltip_timezone = 
@@ -202,12 +202,12 @@ battery_tooltip = 1
 battery_low_status = 5
 battery_low_cmd = xmessage 'tint2: Battery low!'
 battery_full_cmd = 
-bat1_font = Cantarell 99
-bat2_font = Cantarell 99
+bat1_font = Cantarell 50
+bat2_font = Cantarell 50
 battery_font_color = #ffffff 100
 bat1_format = 
 bat2_format = 
-battery_padding = 36 36
+battery_padding = 18 18
 battery_background_id = 1
 battery_hide = 101
 battery_lclick_command = 
@@ -248,14 +248,14 @@ button_font_color = #ffffff 100
 button_padding = 0 0
 button_background_id = 0
 button_centered = 0
-button_max_icon_size = 54
+button_max_icon_size = 27
 
 #-------------------------------------
 # Tooltip
 tooltip_show_timeout = 0.5
 tooltip_hide_timeout = 0.1
-tooltip_padding = 99 99
+tooltip_padding = 50 50
 tooltip_background_id = 1
 tooltip_font_color = #dddddd 100
-tooltip_font = Cantarell 45
+tooltip_font = Cantarell 23
 
