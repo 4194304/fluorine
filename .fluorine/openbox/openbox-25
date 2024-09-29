@@ -16,7 +16,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>lowDPI font</name>
-      <size>5</size>
+      <size>19</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -25,7 +25,7 @@
     </font>
     <font place="InactiveWindow">
       <name>lowDPI font</name>
-      <size>17</size>
+      <size>19</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -34,7 +34,7 @@
     </font>
     <font place="MenuHeader">
       <name>lowDPI font</name>
-      <size>17</size>
+      <size>19</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -43,7 +43,7 @@
     </font>
     <font place="MenuItem">
       <name>lowDPI font</name>
-      <size>17</size>
+      <size>19</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -52,7 +52,7 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>lowDPI font</name>
-      <size>17</size>
+      <size>19</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -61,7 +61,7 @@
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>lowDPI font</name>
-      <size>17</size>
+      <size>19</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
