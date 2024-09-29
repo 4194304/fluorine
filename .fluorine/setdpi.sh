@@ -1,4 +1,3 @@
-#!/usr/bin/bash
 if ! [[ "$1" =~ ^[0-9]+$ ]]
     then
         echo "Number is not a valid integer, try again."
