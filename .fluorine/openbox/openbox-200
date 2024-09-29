@@ -16,7 +16,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Cantarell</name>
-      <size>11</size>
+      <size>22</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
