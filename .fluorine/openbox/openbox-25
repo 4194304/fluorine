@@ -34,7 +34,7 @@
     </font>
     <font place="MenuHeader">
       <name>lowDPI font</name>
-      <size>19</size>
+      <size>5</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
