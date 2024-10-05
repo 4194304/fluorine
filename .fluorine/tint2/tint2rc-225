@@ -254,8 +254,8 @@ button_max_icon_size = 27
 # Tooltip
 tooltip_show_timeout = 0.5
 tooltip_hide_timeout = 0.1
-tooltip_padding = 25 25
+tooltip_padding = 18 18
 tooltip_background_id = 1
 tooltip_font_color = #dddddd 100
-tooltip_font = Cantarell 23
+tooltip_font = Cantarell 22
 
