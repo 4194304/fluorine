@@ -42,5 +42,5 @@ real-ppi () {
     }')
     
 }
-
-real-ppi
+SCALE=$(real-ppi)
+~/.fluorine/setinterface.sh $SCALE
