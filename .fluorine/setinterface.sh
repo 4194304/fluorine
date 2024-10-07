@@ -4,6 +4,7 @@ cp ~/.fluorine/jgmenu/jgmenurc-$1 ~/.config/jgmenu/jgmenurc
 ~/.fluorine/./setdpi.sh $1 $1
 ~/.fluorine/openbox/./replace.sh $1
 echo "Restarting interface elements..." & {
+xrdb -merge ~/.Xresources
 killall tint2
 killall jgmenu
 tint2 & disown
