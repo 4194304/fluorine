@@ -49,4 +49,5 @@ if ! [[ "$1" =~ ^[0-9]+$ ]]
 	echo "This likely means that there is no physical display present."
         exit
 fi
+echo "Display scale found: $SCALE%"
 ~/.fluorine/setinterface.sh $SCALE
