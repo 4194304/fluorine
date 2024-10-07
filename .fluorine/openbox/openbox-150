@@ -70,18 +70,3 @@
     </font>
   </theme>
 <!-- openboxclose -->
-
-      <slant>Normal</slant>
-      <!-- 'italic' or 'normal' -->
-    </font>
-    <font place="InactiveOnScreenDisplay">
-      <name>Cantarell</name>
-      <size>20</size>
-      <!-- font size in points -->
-      <weight>Bold</weight>
-      <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
-      <!-- 'italic' or 'normal' -->
-    </font>
-  </theme>
-<!-- openboxclose -->
