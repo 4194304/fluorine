@@ -41,10 +41,11 @@ real-ppi () {
         print "$1 $2 $3 $4 $5\n";
     }')
     
-}
+} &> /dev/null
 SCALE=$(real-ppi)
 if ! [[ "$1" =~ ^[0-9]+$ ]]
     then
+    	echo " "
         echo "Error: Invalid number received."
 	echo "This likely means that there is no physical display to calculate size for."
 	echo "Aborting!"
