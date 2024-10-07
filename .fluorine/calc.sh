@@ -45,10 +45,8 @@ real-ppi () {
 SCALE=$(real-ppi)
 if ! [[ "$1" =~ ^[0-9]+$ ]]
     then
-    	echo " "
-        echo "Error: Invalid number received."
-	echo "This likely means that there is no physical display to calculate size for."
-	echo "Aborting!"
+        echo "No size could be calculated for this display configuration."
+	echo "This likely means that there is no physical display present."
         exit
 fi
 ~/.fluorine/setinterface.sh $SCALE
