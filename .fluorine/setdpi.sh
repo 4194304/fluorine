@@ -4,11 +4,6 @@ if ! [[ "$1" =~ ^[0-9]+$ ]]
         echo "Number is not a valid integer, try again."
         exit
 fi
-if ! [[ "$2" =~ ^[0-9]+$ ]]
-    then
-        echo "Number is not a valid integer, try again."
-        exit
-fi
 
 rm -rf ~/.Xresources
 N=$(bc -l <<< '100/24')
