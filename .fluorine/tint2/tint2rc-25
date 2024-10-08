@@ -221,7 +221,7 @@ ac_disconnected_cmd =
 #-------------------------------------
 # Button 1
 button = new
-button_icon = ~/.fluorine/menu_50.png
+button_icon = ~/.fluorine/menu_25.png
 button_text = 
 button_lclick_command = jgmenu_run
 button_rclick_command = 
