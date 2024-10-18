@@ -6,10 +6,10 @@ select option in Shutdown Restart Logoff Exit
 do
 	case $option in
 		"Shutdown")
-			doas poweroff
+			shutdown -P 0
 			break;;
 		"Restart")
-			doas reboot
+			reboot
 			break;;
 		"Logoff")
 			killall openbox
