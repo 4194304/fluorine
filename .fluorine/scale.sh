@@ -51,7 +51,6 @@ fi
 
 cd ~/.fluorine/temp/
 sed $'/<!-- openboxclose -->/ {r openbox-custom\n} ; /<!-- openboxstart -->/,/<!-- openboxclose -->/ {d}' ~/.fluorine/temp/rc.xml > ~/.config/openbox/rc.xml
-cd ~
 cp ~/.fluorine/temp/settings.ini ~/.config/gtk-3.0/settings.ini
 declare -i A=(100*$1/100)
 declare -i B=(26*$1/100)
