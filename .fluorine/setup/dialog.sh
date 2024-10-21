@@ -39,7 +39,7 @@ IMPORTANT: Screen resolution examples shown in the right column would be relativ
 exec 3>&-
 clear
 number=${result::-1}
-exec ~/.fluorine/./setinterface.sh $number & dialog --title "Fluorine Setup" \
+exec ~/.fluorine/scale.sh $number & dialog --title "Fluorine Setup" \
 	--clear \
 	--msgbox \
 "Fluorine has been successfully set up. \n
