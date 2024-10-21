@@ -31,6 +31,7 @@ s=$(printf "%.*f\n" 2 $r)
 sed -i -e "s/1x/"$s"x/g" ~/.fluorine/temp/openbox-custom
 t=$(bc <<< "$s*100")
 u=$(printf "%.*f\n" 0 $t)
+cp ~/.fluorine/tint2/tint2rc-$u ~/.config/tint2/tint2rc
 if (($u < 26));
 	then
 		sed -i -e "s/11/17/g" ~/.fluorine/temp/openbox-custom
