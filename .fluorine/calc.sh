@@ -50,4 +50,4 @@ if ! [[ "$1" =~ ^[0-9]+$ ]]
         exit
 fi
 echo "Display scale found: $SCALE%"
-~/.fluorine/setinterface.sh $SCALE
+~/.fluorine/scale.sh $SCALE
