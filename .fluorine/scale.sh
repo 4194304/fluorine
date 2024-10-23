@@ -18,10 +18,10 @@ mkdir -p ~/.fluorine/temp/
 cp ~/.config/gtk-3.0/settings.ini ~/.fluorine/temp/settings.ini
 cp ~/.config/lxterminal/lxterminal.conf ~/.fluorine/temp/lxterminal.conf
 cp ~/.config/l3afpad/l3afpadrc ~/.fluorine/temp/l3afpadrc
-cp ~/.fluorine/openbox/openbox-100 ~/.fluorine/temp/openbox-custom
+cp ~/.fluorine/interface/openbox ~/.fluorine/temp/openbox-custom
 cp ~/.config/openbox/rc.xml ~/.fluorine/temp/rc.xml
 cp ~/.config/tint2/tint2rc ~/.fluorine/temp/tint2rc
-cp ~/.fluorine/jgmenu/jgmenurc-custom ~/.fluorine/temp/jgmenurc
+cp ~/.fluorine/interface/jgmenu ~/.fluorine/temp/jgmenurc
 declare -i B=(3*$1/100)
 sed -i -e "s/border_width = 3/border_width = $B/g" ~/.fluorine/temp/tint2rc
 p=$1
@@ -74,7 +74,7 @@ fi
 cp ~/.fluorine/temp/jgmenurc ~/.config/jgmenu/jgmenurc
 cp ~/.fluorine/temp/lxterminal.conf ~/.config/lxterminal/lxterminal.conf
 cp ~/.fluorine/temp/l3afpadrc ~/.config/l3afpad/l3afpadrc
-cp ~/.fluorine/tint2/tint2rc-custom ~/.fluorine/temp/tint2rc
+cp ~/.fluorine/interface/tint2 ~/.fluorine/temp/tint2rc
 declare -i G=(3*$1/100)
 declare -i H=(4*$1/100)
 declare -i I=($1/100)
