@@ -1,9 +1,0 @@
-stay_alive = 0
-tint2_look = 1
-scale_relative_to_dpi = 100
-menu_width = 400
- item_height = 104
-sep_height = 36
-font = Cantarell 44
-icon_size = 52
-arrow_width = 60
