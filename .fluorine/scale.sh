@@ -10,6 +10,7 @@ N=$(bc -l <<< '100/24')
 C=$(bc -l <<< $1/$N)
 D=$(printf "%.0f\n" "$C")
 declare -i A=($1*96/100)
+touch ~/.Xresources
 echo Xft.dpi: $A > ~/.Xresources
 echo "Xcursor.size: $D" >> ~/.Xresources
 rm -rf ~/.fluorine/dpi.sh
