@@ -137,8 +137,9 @@ if (($1 < 26));
 		sed -i -e "s/tooltip_font = Cantarell $N/tooltip_font = lowDPI font 5/g" ~/.fluorine/temp/tint2rc
 		sed -i -e "s/button_icon = ~\/.fluorine\/menu_50.png/button_icon = ~\/.fluorine\/menu_25.png/g" ~/.fluorine/temp/tint2rc
 fi
+mkdir -p ~/.themes
 rm -rf ~/.themes/openbox/
-cp -R ~/Documents/test/default-5.00x ~/.themes/openbox
+cp -R ~/.fluorine/interface/base ~/.themes/openbox
 cd ~/.themes/openbox/openbox-3/
 declare -i L=($1/5)
 for file in *.xbm
