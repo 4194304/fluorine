@@ -28,9 +28,17 @@ p=$1
 q=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+12) / 25) * 25} 1' <<< $p)
 r=$(bc -l <<< "$q/100")
 s=$(printf "%.*f\n" 2 $r)
-sed -i -e "s/1x/"$s"x/g" ~/.fluorine/temp/openbox-custom
 t=$(bc <<< "$s*100")
 u=$(printf "%.*f\n" 0 $t)
+if (($1 > 499));
+	then
+		sed -i -e "s/1x/5.00x/g" ~/.fluorine/temp/openbox-custom
+fi
+if (($u < 26));
+	then
+		sed -i -e "s/1x/0.25x/g" ~/.fluorine/temp/openbox-custom
+fi
+sed -i -e "s/1x/"$s"x/g" ~/.fluorine/temp/openbox-custom
 declare -i A=(11*$1/100)
 sed -i -e "s/font = Cantarell 11/font = Cantarell $A/g" ~/.fluorine/temp/jgmenurc
 sed -i -e "s/font = Cantarell 11/font = Cantarell $A/g" ~/.fluorine/temp/tint2rc
