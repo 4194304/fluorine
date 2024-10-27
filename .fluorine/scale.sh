@@ -30,15 +30,7 @@ r=$(bc -l <<< "$q/100")
 s=$(printf "%.*f\n" 2 $r)
 t=$(bc <<< "$s*100")
 u=$(printf "%.*f\n" 0 $t)
-if (($1 > 499));
-	then
-		sed -i -e "s/1x/5.00x/g" ~/.fluorine/temp/openbox-custom
-fi
-if (($u < 26));
-	then
-		sed -i -e "s/1x/0.25x/g" ~/.fluorine/temp/openbox-custom
-fi
-sed -i -e "s/1x/"$s"x/g" ~/.fluorine/temp/openbox-custom
+sed -i -e "s/default-1x/openbox/g" ~/.fluorine/temp/openbox-custom
 declare -i A=(11*$1/100)
 sed -i -e "s/font = Cantarell 11/font = Cantarell $A/g" ~/.fluorine/temp/jgmenurc
 sed -i -e "s/font = Cantarell 11/font = Cantarell $A/g" ~/.fluorine/temp/tint2rc
@@ -145,6 +137,34 @@ if (($1 < 26));
 		sed -i -e "s/tooltip_font = Cantarell $N/tooltip_font = lowDPI font 5/g" ~/.fluorine/temp/tint2rc
 		sed -i -e "s/button_icon = ~\/.fluorine\/menu_50.png/button_icon = ~\/.fluorine\/menu_25.png/g" ~/.fluorine/temp/tint2rc
 fi
+rm -rf ~/.themes/openbox/
+cp -R ~/Documents/test/default-5.00x ~/.themes/openbox
+cd ~/.themes/openbox/openbox-3/
+declare -i L=($1/5)
+for file in *.xbm
+do
+magick "$file" -interpolate Nearest -filter point -resize $L% "$file"
+done
+declare -i A=(20*$L/100)
+declare -i B=(5*$L/100)
+declare -i C=(15*$L/100)
+declare -i D=(10*$L/100)
+if (($1 < 60))
+	then
+		cp ~/.fluorine/interface/icons/50/*.xbm ~/.themes/openbox/openbox-3/
+fi
+if (($1 < 50))
+	then
+		declare -i A=(1)
+		declare -i B=(1)
+		declare -i C=(1)
+		declare -i D=(0)
+		cp ~/.fluorine/interface/icons/25/*.xbm ~/.themes/openbox/openbox-3/
+fi
+sed -i -e "s/window.handle.width: 20/window.handle.width: $A/g" ~/.themes/openbox/openbox-3/themerc
+sed -i -e "s/border.Width: 5/border.Width: $B/g" ~/.themes/openbox/openbox-3/themerc
+sed -i -e "s/padding.width: 15/padding.width: $C/g" ~/.themes/openbox/openbox-3/themerc
+sed -i -e "s/menu.overlap: 10/menu.overlap: $D/g" ~/.themes/openbox/openbox-3/themerc
 cp ~/.fluorine/temp/tint2rc ~/.config/tint2/tint2rc
 rm -rf ~/.fluorine/temp/
 killall jgmenu
