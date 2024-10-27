@@ -43,7 +43,7 @@
   </placement>
                 <!-- openboxstart -->
   <theme>
-    <name>default-1x</name>
+    <name>openbox</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
