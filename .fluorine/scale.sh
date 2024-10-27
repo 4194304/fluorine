@@ -10,11 +10,9 @@ N=$(bc -l <<< '100/24')
 C=$(bc -l <<< $1/$N)
 D=$(printf "%.0f\n" "$C")
 declare -i A=($1*96/100)
-touch ~/.Xresources
 echo Xft.dpi: $A > ~/.Xresources
 echo "Xcursor.size: $D" >> ~/.Xresources
 rm -rf ~/.fluorine/dpi.sh
-cd ~
 mkdir -p ~/.fluorine/temp/
 cp ~/.config/gtk-3.0/settings.ini ~/.fluorine/temp/settings.ini
 cp ~/.config/lxterminal/lxterminal.conf ~/.fluorine/temp/lxterminal.conf
@@ -31,15 +29,14 @@ r=$(bc -l <<< "$q/100")
 s=$(printf "%.*f\n" 2 $r)
 t=$(bc <<< "$s*100")
 u=$(printf "%.*f\n" 0 $t)
-sed -i -e "s/default-1x/openbox/g" ~/.fluorine/temp/openbox-custom
 declare -i A=(11*$1/100)
 sed -i -e "s/font = Cantarell 11/font = Cantarell $A/g" ~/.fluorine/temp/jgmenurc
 sed -i -e "s/font = Cantarell 11/font = Cantarell $A/g" ~/.fluorine/temp/tint2rc
 if (($u < 26));
 	then
-		sed -i -e "s/11/17/g" ~/.fluorine/temp/openbox-custom
-		sed -i -e "s/13/17/g" ~/.fluorine/temp/openbox-custom
-		sed -i -e "s/Cantarell/lowDPI font/g" ~/.fluorine/temp/openbox-custom
+		sed -i -e "s/<size>11<\/size>/<size>17<\/size>/g" ~/.config/openbox/rc.xml
+		sed -i -e "s/<size>13<\/size>/<size>17<\/size><!-- tag -->/g" ~/.config/openbox/rc.xml
+		sed -i -e "s/<name>Cantarell<\/name>/<name>lowDPI font<\/name>/g" ~/.config/openbox/rc.xml
 		sed -i -e "s/Cantarell 11/lowDPI font 17/g" ~/.fluorine/temp/settings.ini
 		sed -i -e "s/Cantarell 11/lowDPI font 17/g" ~/.fluorine/temp/l3afpadrc
 		sed -i -e "s/FreeMono 11/lowDPI font 17/g" ~/.fluorine/temp/lxterminal.conf
@@ -48,14 +45,13 @@ if (($u < 26));
 fi
 if (($u > 26));
 	then
+		sed -i -e "s/<size>17<\/size><!-- tag -->/<size>13<\/size>/g" ~/.config/openbox/rc.xml
+		sed -i -e "s/<size>17<\/size>/<size>11<\/size>/g" ~/.config/openbox/rc.xml
+		sed -i -e "s/<name>lowDPI font<\/name>/<name>Cantarell<\/name>/g" ~/.config/openbox/rc.xml
 		sed -i -e "s/lowDPI font 17/Cantarell 11/g" ~/.fluorine/temp/settings.ini
 		sed -i -e "s/lowDPI font 17/Cantarell 11/g" ~/.fluorine/temp/l3afpadrc
 		sed -i -e "s/lowDPI font 17/FreeMono 11/g" ~/.fluorine/temp/lxterminal.conf
 fi
-
-cd ~/.fluorine/temp/
-sed $'/<!-- openboxclose -->/ {r openbox-custom\n} ; /<!-- openboxstart -->/,/<!-- openboxclose -->/ {d}' ~/.fluorine/temp/rc.xml > ~/.config/openbox/rc.xml
-cd ~
 cp ~/.fluorine/temp/settings.ini ~/.config/gtk-3.0/settings.ini
 declare -i Z=(100*$1/100)
 declare -i Y=(26*$1/100)
@@ -141,9 +137,8 @@ fi
 mkdir -p ~/.themes
 rm -rf ~/.themes/openbox/
 cp -R ~/.fluorine/interface/base ~/.themes/openbox
-cd ~/.themes/openbox/openbox-3/
 declare -i L=($1/5)
-for file in *.xbm
+for file in ~/.themes/openbox/openbox-3/*.xbm
 do
 magick "$file" -interpolate Nearest -filter point -resize $L% "$file"
 done
