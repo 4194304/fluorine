@@ -146,7 +146,7 @@ declare -i A=(20*$L/100)
 declare -i B=(5*$L/100)
 declare -i C=(15*$L/100)
 declare -i D=(10*$L/100)
-if (($1 < 60))
+if (($1 < 70))
 	then
 		cp ~/.fluorine/interface/icons/50/*.xbm ~/.themes/openbox/openbox-3/
 fi
