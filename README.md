@@ -38,19 +38,25 @@ Follow what is presented to you in the terminal, and DO NOT restart after Fluori
 
 Updating Fluorine on Alpine should work as intended.
 
-<b>apt (Ubuntu)</b>
+<b>apt (Ubuntu/Debian)</b>
 <br>
 <br>
 Before running Fluorine's install script, run this command to install necessary packages:
 ```bash
-sudo apt install dialog git wmctrl gtk+3.0 rsync fonts-cantarell fonts-freefont-ttf polkitd xorg xinit tumbler xwallpaper lxterminal thunar jgmenu openbox tint2 l3afpad lxappearance-obconf
+sudo apt install dialog git wmctrl gtk+3.0 rsync fonts-cantarell fonts-freefont-ttf polkitd xorg xinit tumbler xwallpaper lxterminal thunar jgmenu openbox tint2 l3afpad lxappearance-obconf imagemagick
 ```
-<p>Updating should be the same as on Alpine.</p>
+<p>Updating should work perfectly fine, however you will have to install any missing new packages.</p>
 
 <b>portage (Gentoo)</b>
 <br>
 <br>
-<p>At the moment I have not taken the time to see what packages are available on Gentoo, but it should be simple enough to find the packages manually.</p>
+<p>At the moment I have not found the packages, but I would highly recommend installing apk and doing things the "Alpine way" as Gentoo virtually runs off of the same core system as Alpine.</p>
+<br>
+<b>Installing apk</b>
+<p>First download it using wget:"
+<p>wget https://gitlab.alpinelinux.org/api/v4/projects/5/packages/generic/v2.14.0/x86_64/apk.static</p>
+<br>
+<p>This acts as a binary, so you can simply copy it to /usr/bin without the .static extension and it will work.</p>
 
 <b>pacman (Manjaro)</b>
 <br>
