@@ -71,4 +71,18 @@ Will be added soon.
 <b>dnf (Fedora)</b>
 <br>
 <br>
-Did not finish.
+Before running the install script, run this command install necessary packages:
+```bash
+bc imagemagick rsync git wmctrl dialog lxappearance-obconf lxterminal xrdb tint2 jgmenu openbox tumbler Thunar xorg-x11-xinit obconf abattis-cantarell-fonts xorg-x11-server-Xorg polkit l3afpad gnu-free-fonts
+```
+On top of that though, you will have compile and install xwallpaper (each line is an individual command):
+
+```bash
+git clone https://github.com/stoeckmann/xwallpaper
+cd xwallpaper
+./autogen.sh
+./configure
+make
+make install
+```
+Otherwise you will not be able to have a wallpaper (black background).
