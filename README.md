@@ -63,10 +63,10 @@ sudo apt install dialog git wmctrl gtk+3.0 rsync fonts-cantarell fonts-freefont-
 <br>
 Current status of Manjaro compatibility is unknown, but Manjaro should work without issue.
 
-<b>yum (RHEL)</b>
+<b>yum</b>
 <br>
 <br>
-Will be added soon.
+<p>Can't find package repositories for yum, so while it should be similar to dnf (listed below), make sure to verify that each package exists. If it doesn't, find the package yourself or compile if it is not in the repository at all.</p>
 
 <b>dnf (Fedora)</b>
 <br>
