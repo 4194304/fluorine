@@ -163,6 +163,81 @@ sed -i -e "s/border.Width: 5/border.Width: $B/g" ~/.themes/openbox/openbox-3/the
 sed -i -e "s/padding.width: 15/padding.width: $C/g" ~/.themes/openbox/openbox-3/themerc
 sed -i -e "s/menu.overlap: 10/menu.overlap: $D/g" ~/.themes/openbox/openbox-3/themerc
 cp ~/.fluorine/temp/tint2rc ~/.config/tint2/tint2rc
+cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml ~/.fluorine/temp/thunar.xml
+killall thunar
+killall xfconfd
+declare -i A=(130*$1/100)
+declare -i D=(16*$1/100)
+if (($1 > 1));
+	then
+		B=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+12) / 25) * 25} 1' <<< $1)
+fi
+if (($1 > 100));
+	then
+		B=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+25) / 50) * 50} 1' <<< $B)
+fi
+if (($1 > 300));
+	then
+		B=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+50) / 100) * 100} 1' <<< $B)
+fi
+if (($1 > 400));
+	then
+		B=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+200) / 400) * 400} 1' <<< $B)
+fi
+if (($1 > 800));
+	then
+		B=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+400) / 800) * 800} 1' <<< $B)
+fi
+if (($B == 0));
+	then
+		B=$(echo 25)
+fi
+if (($B > 1600));
+	then
+		B=$(echo 1600)
+fi
+
+if (($1 > 1));
+	then
+		E=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+4) / 8) * 8} 1' <<< $D)
+fi
+if (($E < 16));
+	then
+		E=$(echo 16)
+fi
+if (($1 > 200));
+	then
+		E=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+8) / 16) * 16} 1' <<< $E)
+fi
+if (($1 > 300 && $1 < 800));
+	then
+		E=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+24) / 48) * 48} 1' <<< $E)
+fi
+if (($1 > 800));
+	then
+		E=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+16) / 32) * 32} 1' <<< $E)
+fi
+if (($1 > 1200));
+	then
+		E=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+32) / 64) * 64} 1' <<< $E)
+fi
+if (($1 > 1600));
+	then
+		E=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+128) / 256) * 256} 1' <<< $E)
+fi
+if (($1 > 3200));
+	then
+		E=$(awk '{for (i=1; i<=NF; i++) $i = int( ($i+256) / 512) * 512} 1' <<< $E)
+fi
+if (($E > 1024));
+	then
+		E=$(echo 1024)
+fi
+sed -i "s/THUNAR_ICON_SIZE_.*\"\/>/THUNAR_ICON_SIZE_$E\"\/>/g" ~/.fluorine/temp/thunar.xml
+sed -i "s/<property name=\"last-separator-position\" type=\"int\" value=\".*\"\/>/<property name=\"last-separator-position\" type=\"int\" value=\"$A\"\/>/g" ~/.fluorine/temp/thunar.xml
+sed -i "s/  <property name=\"last-details-view-zoom-level\" type=\"string\" value=\".*\"\/>/  <property name=\"last-details-view-zoom-level\" type=\"string\" value=\"THUNAR_ZOOM_LEVEL_$B\_PERCENT\"\/>/g" ~/.fluorine/temp/thunar.xml
+sed -i "s/  <property name=\"last-icon-view-zoom-level\" type=\"string\" value=\".*\"\/>/  <property name=\"last-icon-view-zoom-level\" type=\"string\" value=\"THUNAR_ZOOM_LEVEL_$B\_PERCENT\"\/>/g" ~/.fluorine/temp/thunar.xml
+cp ~/.fluorine/temp/thunar.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 rm -rf ~/.fluorine/temp/
 killall jgmenu
 killall tint2
