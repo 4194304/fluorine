@@ -1,12 +1,12 @@
 ### README is currently under construction
 
 ## Note:
-Fluorine should be mostly stable, but be prepared to use the terminal and deal with problems.
+Fluorine at this point is quite stable, but breaking changes may still be made, so be prepared to deal with possible issues.
 
-On top of that, currently Fluorine is only made to work on Arch and Alpine based systems. If you want to install Fluorine on a distribution that is not Arch or Alpine based, please scroll down to the <b>Installing and updating on distributions other than Arch</b> section before executing the install script.
+On top of that, Fluorine is only tested to work properly on Arch and Alpine. If you're using a different distribution, don't expect stability to be all that great.
 
 # Fluorine
-Fluorine is a Linux desktop that focuses on being lightweight, customizable, and most importantly, great for hiDPI displays.
+Fluorine is a Linux desktop that focuses on being lightweight, fast, and most importantly, great for hiDPI displays.
 
 ### How to install Fluorine
 Fluorine can be installed by running the following command below:
