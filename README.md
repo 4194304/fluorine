@@ -1,88 +1,11 @@
-### README is currently under construction
-
-## Note:
-Fluorine at this point is quite stable, but breaking changes may still be made, so be prepared to deal with possible issues.
-
-On top of that, Fluorine is only tested to work properly on Arch and Alpine. If you're using a different distribution, don't expect stability to be all that great.
-
 # Fluorine
-Fluorine is a Linux desktop that focuses on being lightweight, fast, and most importantly, great for hiDPI displays.
+## Disclaimer:
+Fluorine is being rewritten to be an actual desktop instead of a collection of programs and bash scripts so things may break.
 
-### How to install Fluorine
-Fluorine can be installed by running the following command below:
-```bash
-bash <(curl -s https://fluorine.sh/install)
-```
-Proceed with the prompts, and when you're done you should be greeted with Fluorine's desktop!
+As a daily driver it'll probably be fine though as long as you don't update if everything's fine.
 
-### Updating Fluorine
-WARNING: At the moment this may lead to Fluorine breaking, but the chance is unlikely.
+## Installation
 
-If your installation is out of date, or is broken, updating Fluorine may be the solution.
-```bash
-bash <(curl -s https://fluorine.sh/update)
-```
+On Arch run `bash <(curl -s https://fluorine.sh/install)`
 
-### Installing and updating on distributions other than Arch
-While Arch Linux is the mainly supported distribution for Fluorine, other distributions also work as well.
-
-<b>apk (Alpine)</b>
-<br>
-<br>
-Alpine has its own install script:
-```bash
-bash <(curl -s https://fluorine.sh/alpine)
-```
-
-Follow what is presented to you in the terminal, and DO NOT restart after Fluorine has finished installing. Log out, and log back in.
-
-Updating Fluorine on Alpine should work as intended.
-
-<b>apt (Ubuntu/Debian)</b>
-<br>
-<br>
-Before running Fluorine's install script, run this command to install necessary packages:
-```bash
-sudo apt install dialog git wmctrl gtk+3.0 rsync fonts-cantarell fonts-freefont-ttf polkitd xorg xinit tumbler xwallpaper lxterminal thunar jgmenu openbox tint2 l3afpad lxappearance-obconf imagemagick
-```
-<p>Updating should work perfectly fine, however you will have to install any missing new packages.</p>
-
-<b>portage (Gentoo)</b>
-<br>
-<br>
-<p>At the moment I have not found the packages, but I would highly recommend installing apk and doing things the "Alpine way" as Gentoo virtually runs off of the same core system as Alpine.</p>
-<br>
-<b>Installing apk</b>
-<p>First download it using wget:"
-<p>wget https://gitlab.alpinelinux.org/api/v4/projects/5/packages/generic/v2.14.0/x86_64/apk.static</p>
-<br>
-<p>This acts as a binary, so you can simply copy it to /usr/bin without the .static extension and it will work.</p>
-
-<b>pacman (Manjaro)</b>
-<br>
-<br>
-Current status of Manjaro compatibility is unknown, but Manjaro should work without issue.
-
-<b>yum</b>
-<br>
-<br>
-<p>Can't find package repositories for yum, so while it should be similar to dnf (listed below), make sure to verify that each package exists. If it doesn't, find the package yourself or compile if it is not in the repository at all.</p>
-
-<b>dnf (Fedora)</b>
-<br>
-<br>
-Before running the install script, run this command install necessary packages:
-```bash
-bc imagemagick rsync git wmctrl dialog lxappearance-obconf lxterminal xrdb tint2 jgmenu openbox tumbler Thunar xorg-x11-xinit obconf abattis-cantarell-fonts xorg-x11-server-Xorg polkit l3afpad gnu-free-fonts
-```
-On top of that though, you will have compile and install xwallpaper (each line is an individual command):
-
-```bash
-git clone https://github.com/stoeckmann/xwallpaper
-cd xwallpaper
-./autogen.sh
-./configure
-make
-make install
-```
-Otherwise you will not be able to have a wallpaper (black background).
+On Manjaro it should be fine but proceed with caution.
