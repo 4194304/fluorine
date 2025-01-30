@@ -9,3 +9,5 @@ As a daily driver it'll probably be fine though as long as you don't update if e
 On Arch run `bash <(curl -s https://fluorine.sh/install)`
 
 On Manjaro it should be fine but proceed with caution.
+
+To update (which is basically a guessing game of if something will break or not): `bash <(curl -s https://fluorine.sh/install)`
